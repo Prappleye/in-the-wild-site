@@ -1,0 +1,25 @@
+:root{--g:#27453D;--sage:#6E8B74;--or:#E08A4B;--navy:#2F4A6B;--ink:#1d2a26;--mut:#56645e;--bg:#fff;--soft:#f4f6f5;--line:#e3e8e5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--g);line-height:1.15}
+a{color:var(--g)}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--or);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:#fff;padding:8px;z-index:9}
+header.top{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:5}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.brand{display:flex;gap:8px;align-items:center;font-family:Georgia,serif;font-weight:700;font-size:1.2rem;color:var(--g);text-decoration:none}
+nav a{margin-left:22px;text-decoration:none;color:var(--mut);font-size:.95rem}nav a:hover{color:var(--g)}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;background:var(--g);color:#fff;text-decoration:none;font-weight:600}
+.btn.alt{background:transparent;color:var(--g);border:2px solid var(--g)}
+.pill{display:inline-block;padding:5px 12px;border-radius:999px;background:#fdf1e7;color:#9a4f17;font-size:.85rem;font-weight:600}
+section{padding:72px 0}section.soft{background:var(--soft)}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin:0 0 12px}.lead{color:var(--mut);max-width:640px;font-size:1.1rem;margin:0 0 32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{margin:12px 0 6px;font-size:1.2rem}.card p{margin:0;color:var(--mut)}
+.ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:#e9f0eb;color:var(--g)}
+.ic svg{width:24px;height:24px}
+footer{background:var(--g);color:#dfe8e3;padding:40px 0;font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}footer a{color:#fff;margin-left:18px}
+.page{padding:56px 0;max-width:780px}
+@media(max-width:640px){nav a:not(.keep){display:none}section{padding:52px 0}}
